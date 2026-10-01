@@ -7,6 +7,16 @@
             Console.WriteLine("Part 1");
             int[,] testArray = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
             int[,] rotatedArray = RotatedArray(testArray);
+            Console.WriteLine("Given Array:");
+            for (int i = 0; i < testArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < testArray.GetLength(1); j++)
+                {
+                    Console.Write(testArray[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("\nArray with 90 degree rotation:");
             for (int i = 0; i < rotatedArray.GetLength(0); i++)
             {
                 for (int j = 0; j < rotatedArray.GetLength(1); j++)
